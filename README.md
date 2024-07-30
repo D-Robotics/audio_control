@@ -2,7 +2,7 @@ English| [简体中文](./README_cn.md)
 
 # Feature Introduction
 
-Voice-controlled car motion function controls the robot to move forward, backward, left, and right through voice commands, requiring the use of the intelligent voice module of the Horizon Robot Operating System. When the user speaks the command to control the robot's movement, the intelligent voice module recognizes the command, and then issues the motion command to the robot for movement.
+Voice-controlled car motion function controls the robot to move forward, backward, left, and right through voice commands, requiring the use of the intelligent voice module of the D-Robotics Robot Operating System. When the user speaks the command to control the robot's movement, the intelligent voice module recognizes the command, and then issues the motion command to the robot for movement.
 
 The process is as shown in the diagram below:
 
@@ -82,7 +82,7 @@ tros foxy:
 # Set up the tros.n environment
 source /opt/tros/setup.bash
 
-# Copy the configuration files required for running examples from the Horizon RDK installation path.
+# Copy the configuration files required for running examples from the RDK installation path.
 cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
 # Suppress debug printing information
@@ -97,7 +97,7 @@ tros humble:
 # Set up the tros.b humble environment
 source /opt/tros/humble/setup.bash
 
-# Copy the configuration files required for running examples from the Horizon RDK installation path.
+# Copy the configuration files required for running examples from the RDK installation path.
 cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
 # Suppress debug printing information
@@ -111,7 +111,7 @@ After successful startup, when the user says commands like "*go forward*" "*move
 
 **3. Results Analysis**
 
-The Horizon RDK terminal output during operation provides the following information:
+The RDK terminal output during operation provides the following information:
 
 ```shell
     This is audio control package.
@@ -138,7 +138,7 @@ Gazebo simulation is suitable for developers who have RDK X3 but do not have a p
 
 | Robot Name | Manufacturer | Reference Link                                                 |
 | :--------- | ------------ | -------------------------------------------------------------- |
-| RDK X3     | Multiple     | [Click here](https://developer.horizon.cc/sunrise)              |
+| RDK X3     | Multiple     | [Click here](https://developer.d-robotics.cc/rdkx3)              |
 | Microphone Board   | Waveshare | [Click here](https://www.waveshare.net/shop/Audio-Driver-HAT.htm) |
 
 ## Instructions
@@ -147,7 +147,7 @@ Gazebo simulation is suitable for developers who have RDK X3 but do not have a p
 
 1. Developers have the physical RDK kit and the corresponding microphone board.
 2. The ROS Gazebo and Turtlebot robot-related function packages have been installed on the PC.
-3. The PC is on the same network segment as the Horizon RDK (wired or connected to the same wireless network, the first three segments of the IP address must be consistent). The required environment for the PC includes:
+3. The PC is on the same network segment as the RDK (wired or connected to the same wireless network, the first three segments of the IP address must be consistent). The required environment for the PC includes:
 
 tros foxy:
 - Ubuntu 20.04 system
@@ -226,7 +226,7 @@ tros foxy:
 # Set up tros.n environment
 source /opt/tros/setup.bash
 
-# Copy the required configuration files from the installation path of Horizon RDK
+# Copy the required configuration files from the installation path of RDK
 cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
 # Disable debug print information
@@ -241,7 +241,7 @@ tros humble:
 # Set up tros.b humble environment
 source /opt/tros/humble/setup.bash
 
-# Copy the required configuration files from the installation path of Horizon RDK
+# Copy the required configuration files from the installation path of RDK
 cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
 # Disable debug print information

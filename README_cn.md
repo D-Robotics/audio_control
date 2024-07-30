@@ -2,7 +2,7 @@
 
 # 功能介绍
 
-语音控制小车运动功能通过语音控制机器人向前、向后、向左、向右运动，需要搭配地平线机器人操作系统的智能语音模块一起使用。当用户说出控制机器人运动的指令后，智能语音模块识别到指定，然后下发运动指令给机器人运动。
+语音控制小车运动功能通过语音控制机器人向前、向后、向左、向右运动，需要搭配TROS的智能语音模块一起使用。当用户说出控制机器人运动的指令后，智能语音模块识别到指定，然后下发运动指令给机器人运动。
 
 流程如下图：
 
@@ -82,7 +82,7 @@ sudo apt install -y tros-humble-audio-control
    # 配置tros.n环境
    source /opt/tros/setup.bash
 
-   # 从地平线RDK的安装路径中拷贝出运行示例需要的配置文件。
+   # 从RDK的安装路径中拷贝出运行示例需要的配置文件。
    cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
    # 屏蔽调式打印信息
@@ -97,7 +97,7 @@ sudo apt install -y tros-humble-audio-control
    # 配置tros.b humble环境
    source /opt/tros/humble/setup.bash
 
-   # 从地平线RDK的安装路径中拷贝出运行示例需要的配置文件。
+   # 从RDK的安装路径中拷贝出运行示例需要的配置文件。
    cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
    # 屏蔽调式打印信息
@@ -111,7 +111,7 @@ sudo apt install -y tros-humble-audio-control
 
 **3. 结果分析**
 
-   地平线RDK运行终端输出如下信息：
+   RDK运行终端输出如下信息：
 
    ```shell
          This is audio control package.
@@ -148,7 +148,7 @@ Gazebo仿真适用于持有RDK X3但没有机器人实物的开发者体验功�
 
 1. 开发者有RDK套件实物，及配套的麦克风板;
 2. PC电脑端已经完成ROS Gazebo及Turtlebot机器人相关功能包安装;
-3. 和地平线RDK在同一网段（有线或者连接同一无线网，IP地址前三段需保持一致）的PC，PC端需要安装的环境包括：
+3. 和RDK在同一网段（有线或者连接同一无线网，IP地址前三段需保持一致）的PC，PC端需要安装的环境包括：
 
 tros foxy 版本
 - Ubuntu 20.04系统
@@ -225,7 +225,7 @@ sudo apt install -y tros-humble-audio-control
    # 配置tros.n环境
    source /opt/tros/setup.bash
 
-   # 从地平线RDK的安装路径中拷贝出运行示例需要的配置文件。
+   # 从RDK的安装路径中拷贝出运行示例需要的配置文件。
    cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
    # 屏蔽调式打印信息
@@ -240,7 +240,7 @@ sudo apt install -y tros-humble-audio-control
    # 配置tros.b humble环境
    source /opt/tros/humble/setup.bash
 
-   # 从地平线RDK的安装路径中拷贝出运行示例需要的配置文件。
+   # 从RDK的安装路径中拷贝出运行示例需要的配置文件。
    cp -r /opt/tros/${TROS_DISTRO}/lib/hobot_audio/config/ .
 
    # 屏蔽调式打印信息
